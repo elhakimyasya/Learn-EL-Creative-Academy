@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./styles.css" />
+
+	<title>Tutorial Vue | EL Creative Academy</title>
+</head>
+<body>
+	<div id="aplikasi">
+		<h2>{{ salam }}</h2>
+		<p>{{ peringatan }}</p>
+		<button v-on:click="ubahSalam">
+			Ubah Salam
+		</button>
+		<button v-on:dblclick="ubahSalam">
+			Klik dua kali untuk mengubah Salam
+		</button>
+
+		<input v-on:keyup="pesanSalamPeringatan" placeholder="Ketikkan sesuatu" />
+		<input v-on:keyup.enter="pesanEnterPeringatan"placeholder="Ketikkan sesuatu dan tekan Enter" />
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

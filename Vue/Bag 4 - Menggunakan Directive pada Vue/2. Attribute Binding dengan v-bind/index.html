@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./styles.css" />
+
+	<title>Tutorial Vue | EL Creative Academy</title>
+</head>
+<body>
+	<div id="aplikasi">
+		<h2>{{ salam }}</h2>
+		<p>Salam dari {{ nama }} yang merupakan {{ jabatan }} di EL Creative Academy.</p>
+		<img v-bind:src="gambarOrganisasi" />
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

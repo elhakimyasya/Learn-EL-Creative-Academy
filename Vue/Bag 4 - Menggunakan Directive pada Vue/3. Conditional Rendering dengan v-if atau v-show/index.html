@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="./styles.css" />
+
+	<title>Tutorial Vue | EL Creative Academy</title>
+</head>
+<body>
+	<div id="aplikasi">
+		<h2>{{ salam }}</h2>
+		<p v-if="nama === 'Yasya El Hakim'">
+			Salam dari {{ nama }} yang merupakan {{ jabatan }} di EL Creative Academy.
+		</p>
+		<p v-if="nama === 'Agung Cahyadi'">
+			Salam juga dari {{ nama }} yang merupakan {{ jabatan }} di EL Creative Academy.
+		</p>
+		<img v-bind:src="gambarOrganisasi" />
+
+		<button v-on:click="ubahNama">
+			Ubah Nama
+		</button>
+	</div>
+	<script src="https://unpkg.com/vue"></script>
+	<script src="./main.js"></script>
+</body>
+</html>
