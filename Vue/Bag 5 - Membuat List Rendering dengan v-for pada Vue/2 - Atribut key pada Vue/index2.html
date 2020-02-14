@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Tutorial Vue | EL Creative Academy</title>
+</head>
+
+<body>
+    <div id="aplikasi">
+        <ul>
+            <li v-for="angka in angka1">
+                <p>{{ angka }}</p>
+                <input placeholder="Ketikkan Sesuatu..." />
+            </li>
+        </ul>
+        <button @click="acak">Acak!</button>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash/lodash.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
