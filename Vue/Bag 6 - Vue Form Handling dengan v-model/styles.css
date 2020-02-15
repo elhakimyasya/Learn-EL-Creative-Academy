@@ -1,0 +1,16 @@
+html,
+body {
+    height: 100%;
+    background: #f3f5f6;
+}
+
+#aplikasi {
+    height: 100%;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-top: 0px;
+}
+
+#aplikasi .field {
+    padding: 10px 0;
+}

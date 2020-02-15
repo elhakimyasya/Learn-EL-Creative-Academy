@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.7.4/css/bulma.css" />
+    <title>Tutorial Vue | EL Creative Academy</title>
+</head>
+
+<body>
+    <div id="aplikasi">
+        <div class="field">
+            <label class="label">Nama</label>
+            <input v-model="nama" class="input" type="text" placeholder="Input Teks" />
+        </div>
+
+        <div class="field">
+            <label class="label">Subyek</label>
+            <div class="select">
+                <select v-model="subyek">
+                    <option disabled value="">Pilih Dropdown</option>
+                    <option>HTML</option>
+                    <option>CSS</option>
+                    <option>JavaScript</option>
+                    <option>Lainnya...</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="checkbox">
+                <input v-model="ketentuan" type="checkbox" />
+                Saya setuju dengan ketentuan yang berlaku
+            </label>
+        </div>
+
+        <div class="field">
+            <label class="radio">
+                <input v-model="yaAtauTidak" type="radio" value="Ya" />
+                Ya
+            </label>
+            <label class="radio"> 
+                <input v-model="yaAtauTidak" type="radio" value="Tidak" />
+                Tidak
+            </label>
+        </div>
+
+        <div class="field">
+            <button class="button is-info" @click="submit">
+                Submit
+            </button>
+        </div>
+    </div>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
