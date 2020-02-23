@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    padding-top: 10px;
+    background: #e6ecf1;
+}
+
+#aplikasi {
+    height: 100%;
+    max-width: 400px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+#aplikasi .field {
+    padding: 10px 0;
+}
+
+#aplikasi .error {
+    color: red;
+    display: block;
+}
