@@ -19,4 +19,7 @@ new Vue({
 			this.company.catchPhrase = penggunaRandom.company.catchPhrase;
 		});
 	},
+	mounted() {
+		console.log(this.$el);
+	}
 });
