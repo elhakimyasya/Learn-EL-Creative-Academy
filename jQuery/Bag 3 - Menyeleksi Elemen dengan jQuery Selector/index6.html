@@ -7,50 +7,66 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<p>Ini Paragraf</p>
-	<p class="yasya">Ini Paragraf</p>
-	<p>Ini Paragraf</p>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>No.</th>
+				<th>Nama</th>
+				<th>Panggilan</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Yasya El Hakim</td>
+				<td>yasya</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Dwi Agung Cahyadi</td>
+				<td>Agung</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Arman Handoyo</td>
+				<td>Arman</td>
+			</tr>
+		</tbody>
+	</table>
 
-	<ul>
-		<li>List item satu</li>
-		<li>List item dua</li>
-		<li>List item tiga</li>
-	</ul>
+	<p>Ini Paragraf.</p>
+	<p>Ini Paragraf.</p>
+	<p>Ini Paragraf.</p>
 
-	<ul id="yasya">
-		<li>List item satu</li>
-		<li>List item <span>dua</span></li>
-		<li>List item tiga</li>
-	</ul>
-
-	<ul class="yasya">
-		<li>List item satu</li>
-		<li>List item dua</li>
-		<li>List item tiga</li>
-	</ul>
-
-	<p>Kembali ke <a href="https://www.elcreativeacademy.com/" target="_blank">Homepage</a></p>
+	<form>
+		<label>Nama: <input type="text"></label>
+		<label>Password: <input type="password"></label>
+		<input type="submit" value="Masuk">
+	</form>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			// Hanya menyeleksi elemen paragraf yang memiliki class yasya
-			$("p.yasya").css("background", "yellow");
+			// Menyeleksi tabel row yang muncul pada lokasi ganjil
+			$("tr:odd").css("background", "yellow");
 
-			// Hanya menyeleksi elemen span didalam elemen yang memiliki ID yasya
-			$("#yasya span").css("background", "red");
+			// Menyeleksi tabel row yang muncul pada lokasi genap
+			$("tr:even").css("background", "orange");
 
-			// Menyeleksi elemen li didalam elemen ul
-			$("ul li").css("background", "green");
+			// Menyeleksi elemen paragraf pertama
+			$("p:first").css("background", "red");
 
-			// Menyeleksi elemen li saja didalam elemen ul yang memiliki ID yasya
-			$("ul#yasya li").css("background", "blue");
+			// Menyeleksi elemen paragraf terakhir
+			$("p:last").css("background", "green");
 
-			// Menyeleksi elemen li didalam semua elemen ul yang memiliki class yasya
-			$("ul.yasya li").css("background", "orange");
+			// Menyeleksi semua elemen input yang memiliki type text didalam form
+			$("form :text").css("background", "purple");
 
-			// Menyeleksi semua elemen anchor yang memiliki target blank
-			$('a[target="_blank"]').css("background", "yellow");
+			// Menyeleksi semua elemen input yang memiliki type password didalam form
+			$("form :password").css("background", "blue");
+
+			// Menyeleksi semua elemen input yang memiliki type submit didalam form
+			$("form :submit").css("background", "violet");
 		})
 	</script>
 </body>
