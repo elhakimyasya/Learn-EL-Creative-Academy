@@ -6,7 +6,7 @@ Repository ini terdiri dari Source Code dan Konten untuk Seri Tutorial jQuery ya
 1. Pengenalan jQuery
 2. Syntax
 3. Selector
-4. Event Handling/Event Mehtod
+4. Event Handling/Event Method
 
 
 # Cara Menggunakan
