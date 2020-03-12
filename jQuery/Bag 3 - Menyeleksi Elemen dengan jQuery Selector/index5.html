@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p>Ini Paragraf</p>
+	<p class="yasya">Ini Paragraf</p>
+	<p>Ini Paragraf</p>
+
+	<ul>
+		<li>List item satu</li>
+		<li>List item dua</li>
+		<li>List item tiga</li>
+	</ul>
+
+	<ul class="yasya">
+		<li>List item satu</li>
+		<li>List item <span>dua</span></li>
+		<li>List item tiga</li>
+	</ul>
+
+	<ul class="yasya">
+		<li>List item satu</li>
+		<li>List item dua</li>
+		<li>List item tiga</li>
+	</ul>
+
+	<p>Kembali ke <a href="https://www.elcreativeacademy.com/" target="_blank">Homepage</a></p>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Hanya menyeleksi elemen paragraf yang memiliki class yasya
+			$("p.yasya").css("background", "yellow");
+
+			// Hanya menyeleksi elemen span didalam elemen yang memiliki ID yasya
+			$("#yasya span").css("background", "yellow");
+
+			// Menyeleksi elemen li didalam elemen ul
+			$("ul li").css("background", "red");
+
+			// Menyeleksi elemen li saja didalam elemen ul yang memiliki ID yasya
+			$("ul#yasya li").css("background", "yellow");
+
+			// Menyeleksi elemen li didalam semua elemen ul yang memiliki class yasya
+			$("ul.yasya li").css("background", "green");
+
+			// Menyeleksi semua elemen anchor yang memiliki target blank
+			$('a[target="_blank"]').css("background", "yellow");
+		})
+	</script>
+</body>
+</html>
