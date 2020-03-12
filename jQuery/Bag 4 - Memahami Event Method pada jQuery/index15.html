@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+</head>
+<body>
+	<p></p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).resize(function() {
+				$(window).bind("resize", function(){ 
+					$("p").text("Lebar : " + $(window).width() + " Pixel, " + "Tinggi : " + $(window).height() + " Pixel");
+				});
+			});
+		});
+	</script>
+</body>
+</html>
