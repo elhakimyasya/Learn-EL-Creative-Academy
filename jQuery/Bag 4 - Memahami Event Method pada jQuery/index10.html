@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">p {display: none;}</style>
+</head>
+<body>
+	<form>
+		<label>Provinsi:</label>
+		<select>
+			<option>Lampung</option>
+			<option>Sumatera Selatan</option>
+			<option>Sumatera Barat</option>
+		</select>
+	</form>
+	<p><strong>Catatan:</strong> Untuk melihat hasilnya, pilihlah salah satu nilai pada Dropdown diatas.</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("select").change(function(){
+				var pilihan = $(this).find(":selected").val();
+				alert("Anda telah memilih - " + pilihan);
+			});
+		});
+	</script>
+</body>
+</html>

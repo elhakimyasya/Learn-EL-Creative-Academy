@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">p {display: none;}</style>
+</head>
+<body>
+	<input type="text">
+	<div>Keydown: <span>0</span></div>
+	<div><strong>Catatan:</strong> Untuk melihat hasilnya, masukkan beberapa teks pada kotak input diatas.</div>
+	<p>Tombol telah ditekan.</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			var i = 0;
+			$('input[type="text"]').keyup(function(){
+				$("span").text(i += 1);
+				$("p").show().fadeOut();
+			});
+		});
+	</script>
+</body>
+</html>

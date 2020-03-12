@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">label {display: block;margin: 5px 0;}</style>
+</head>
+<body>
+	<p><strong>Catatan:</strong> Jika kalian mencoba untuk mensubmit nilai yang salah. Maka akan menghasilkan Error.</p>
+	<form id="user">
+		<label for="namaDepan">Nama Depan:</label>
+		<input type="text" name="nama-depan" id="namaDepan">
+		<input type="submit" value="Submit">
+		<div id="hasil"></div>
+	</form> 
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("form").submit(function(event){
+				var regex = /^[a-zA-Z]+$/;
+				var nilai = $("#namaDepan").val();
+				if(regex.test(nilai) == false){
+					$("#hasil").html('<p class="error">Tidak Valid!</p>').show().fadeOut(1000);
+					// Mencegah submit
+					event.preventDefault();
+				}
+			});
+		});
+	</script>
+</body>
+</html>
