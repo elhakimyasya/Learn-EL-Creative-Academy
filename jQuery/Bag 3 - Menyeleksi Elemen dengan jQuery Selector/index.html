@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p id="yasya">Ini paragraf.</p>
+	<p>Ini paragraf.</p>
+	<p>Ini paragraf.</p>
+	
+	<p><strong>Catatan:</strong> Nilai dari atribut id harus unik.</p>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Menyeleksi elemen yang memiliki id="yasya"
+			$("#yasya").css("background", "yellow");
+		})
+	</script>
+</body>
+</html>
