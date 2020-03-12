@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+	<style type="text/css">p {width: 100%;padding: 50px 0;text-align: center;font: bold 34px sans-serif;background: #f0e68c;position: fixed;top: 50px;display: none;} .content{height: 600px;font: 34px sans-serif;text-align: center;}</style>
+</head>
+<body>
+	<p>Telah di Scroll!</p>
+	<div class="content">Scroll lagi.</div>
+	<div class="content">Terus.</div>
+	<div class="content">Scroll lagi.</div>
+	<div class="content">Terus.</div>
+	<div class="content">Scroll lagi.</div>
+	<div class="content">Terus.</div>
+	<div class="content">Scroll lagi.</div>
+	<div class="content">Cukup.</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(window).scroll(function() {
+				$("p").show().fadeOut("slow");
+			});
+		});
+	</script>
+</body>
+</html>
