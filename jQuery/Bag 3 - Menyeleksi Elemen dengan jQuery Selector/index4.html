@@ -7,18 +7,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<H1>Heading</H1>
-	<p class="yasya">Ini paragraf.</p>
-	<p class="yasya">Ini paragraf.</p>
-	<p>Ini paragraf.</p>
-	<p>Ini paragraf.</p>
-	<div>Elemen Block</div>
+	<form>
+		<label>Name: <input type="text"></label>
+		<label>Password: <input type="password"></label>
+		<input type="submit" value="Masuk">
+	</form>
 	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-			// Menyeleksi semua elemen p (paragraf)
-			$("p").css("background", "yellow");
+			// Menyeleksi semua elemen input yang memiliki atribut type="text"
+			$('input[type="text"]').css("background", "yellow");
 		})
 	</script>
 </body>
