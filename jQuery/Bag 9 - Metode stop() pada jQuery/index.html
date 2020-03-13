@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">
+		img {
+			position: relative; /* Dibutuihkan untuk dapat dianimasikan */
+		}
+	</style>
+</head>
+<body>
+	<img src="https://1.bp.blogspot.com/-Jukzvb0W6dY/XWoI2fMqLtI/AAAAAAAAGaQ/LN_mXP7FcfEE08GlTDML-58Cwvx-g0spQCLcBGAs/s1600/android-icon-96x96.png">
+
+	<p>
+		<button type="button" class="tombol-start">Jalankan Animasi</button>
+		<button type="button" class="tombol-stop">Hentikan Animasi</button>
+		<button type="button" class="tombol-back">Kembalikan Animasi</button>
+		<button type="button" class="tombol-reset">Reset Animasi</button>
+	</p>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Animasi dimulai
+			$(".tombol-start").click(function(){
+				$("img").animate({left: "+=150px"}, 2000);
+			});
+
+			// Menghentikan animasi
+			$(".tombol-stop").click(function(){
+				$("img").stop();
+			});
+
+			// Menjalankan animasi dengan arah yang berbeda
+			$(".tombol-back").click(function(){
+				$("img").animate({left: "-=150px"}, 2000);
+			});
+
+			// Reset ke default
+			$(".tombol-reset").click(function(){
+				$("img").animate({left: "0"}, "fast");
+			});
+		});
+	</script>
+</body>
+</html>

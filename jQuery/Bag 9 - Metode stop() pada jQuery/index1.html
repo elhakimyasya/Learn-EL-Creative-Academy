@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">
+		.box {
+			width: 300px;
+			height: 200px;
+			background: #9d7ede;
+			margin-top: 20px;
+			border: 3px solid #6f40ce;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	<p>
+		<button type="button" class="toggle-btn">Toggle Slide</button>
+	</p>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Menghentikan dan Toggle animasi slide
+			$(".toggle-btn").on("click", function(){
+				$(".box").stop().slideToggle(1000);
+			});
+		});
+	</script>
+</body>
+</html>
