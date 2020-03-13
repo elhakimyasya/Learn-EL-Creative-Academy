@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p class="normal">Ini paragraf.</p>
+	<p class="cepat">Ini paragraf.</p>
+	<p class="sangat-cepat">Ini paragraf.</p>
+	<p class="lambat">Ini paragraf.</p>
+	<p class="sangat-lambat">Ini paragraf.</p>
+
+	<button type="button" class="tombol-up">Slide Up Paragraf</button>
+	<button type="button" class="tombol-down">Slide Down Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Sliding up paragraf dengan kecepatan berbeda
+			$(".tombol-up").click(function(){
+				$("p.normal").slideUp();
+				$("p.cepat").slideUp("fast");
+				$("p.lambat").slideUp("slow");
+				$("p.sangat-cepat").slideUp(50);
+				$("p.sangat-lambat").slideUp(2000);
+			});
+
+			// Sliding down paragraf dengan kecepatan berbeda
+			$(".tombol-down").click(function(){
+				$("p.normal").slideDown();
+				$("p.cepat").slideDown("fast");
+				$("p.lambat").slideDown("slow");
+				$("p.sangat-cepat").slideDown(50);
+				$("p.sangat-lambat").slideDown(2000);
+			});
+		});
+	</script>
+</body>
+</html>

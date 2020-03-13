@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p class="normal">Ini paragraf.</p>
+	<p class="cepat">Ini paragraf.</p>
+	<p class="sangat-cepat">Ini paragraf.</p>
+	<p class="lambat">Ini paragraf.</p>
+	<p class="sangat-lambat">Ini paragraf.</p>
+
+	<button type="button" class="tombol-toggle">Toggle Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Slide Toggle paragraf dengan kecepatan berbeda
+			$(".tombol-toggle").click(function(){
+				$("p.normal").slideToggle();
+				$("p.cepat").slideToggle("fast");
+				$("p.lambat").slideToggle("slow");
+				$("p.sangat-cepat").slideToggle(50);
+				$("p.sangat-lambat").slideToggle(2000);
+			});
+		});
+	</script>
+</body>
+</html>
