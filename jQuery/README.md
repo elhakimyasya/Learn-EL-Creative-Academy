@@ -8,6 +8,7 @@ Repository ini terdiri dari Source Code dan Konten untuk Seri Tutorial jQuery ya
 3. Selector
 4. Event Handling/Event Method
 5. Show/Hide
+6. Fade
 
 
 # Cara Menggunakan
