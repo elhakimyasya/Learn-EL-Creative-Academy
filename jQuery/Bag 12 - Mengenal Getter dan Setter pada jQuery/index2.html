@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+</head>
+<body>
+	<div id="container">
+		<h1>Halo Semuanya</h1>
+		<p>The quick <b>brown fox</b> jumps over the lazy dog.</p>
+	</div>
+
+	<button type="button" class="btn-one">Dapatkan semua Konten HTML Paragraf</button>
+	<button type="button" class="btn-two">Dapatkan Konten HTML Container</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Mendapatkan konten HTML dari paragraf pertama
+			$(".btn-one").click(function(){
+				var str = $("p").html();
+				alert(str);
+			});
+
+			// Mendapatkan konten HTML dari elemen yang memiliki id="container"
+			$(".btn-two").click(function(){
+				var str = $("#container").html();
+				alert(str);
+			});
+		});
+	</script>
+</body>
+</html>

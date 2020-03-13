@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+</head>
+<body>
+	<p><a href="https://www.elcreativeacademy.com/">EL Creative Academy</a></p>
+	<img id="elc" src="https://1.bp.blogspot.com/-Jukzvb0W6dY/XWoI2fMqLtI/AAAAAAAAGaQ/LN_mXP7FcfEE08GlTDML-58Cwvx-g0spQCLcBGAs/s1600/android-icon-96x96.png" alt="EL Creative Academy">
+
+	<p>
+		<button type="button" class="tombol-satu">Dapatkan Atribut href</button>
+		<button type="button" class="tombol-dua">Dapatkan Atribut alt</button>
+	</p>
+		
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Mendapatkan nilai dari atribut href 
+			$(".tombol-satu").click(function(){
+				var str = $("a").attr("href");
+				alert(str);
+			});
+
+			// Mendapatkan nilai dari atribut alt 
+			$(".tombol-dua").click(function(){
+				var str = $("img#elc").attr("alt");
+				alert(str);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">
+		.elc {
+			border: 5px solid red;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td>Nama:</td>
+				<td>
+					<input type="text" id="nama">
+				</td>
+			</tr>
+			<tr>
+				<td>Komentar:</td>
+				<td>
+					<textarea rows="4" cols="30" id="komentar"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td>Kota:</td>
+				<td>
+					<select id="kota">
+						<option>Jakarta</option>
+						<option>Bandar Lampung</option>
+						<option>Padang</option>
+					</select>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<p><strong>Catatan:</strong> Untuk mendapatkan nilai, klik salah satu tombol berikut.</p>
+	<button type="button" class="dapatkan-nama">Dapatkan Nama</button>
+	<button type="button" class="dapatkan-komentar">Dapatkan Komentar</button>
+	<button type="button" class="dapatkan-kota">Dapatkan Kota</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Mendapatkan nilai dari input dengan id="nama"
+			$("button.dapatkan-nama").click(function(){
+				var nama = $('input[type="text"]#nama').val();
+				alert(nama);
+			});
+
+			// Mendapatkan nilai dari textarea dengan id="komentar"
+			$("button.dapatkan-komentar").click(function(){
+				var komentar = $("textarea#komentar").val();
+				alert(komentar);
+			});
+
+			// Mendapatkan nilai dari Select Box dengan id="kota"
+			$("button.dapatkan-kota").click(function(){
+				var kota = $("select#kota").val();
+				alert(kota);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">
+		.elc {
+			border: 5px solid red;
+		}
+	</style>
+</head>
+<body>
+	<button type="button">Yasya</button>
+	<button type="button">Agung</button>
+	<button type="button">Arman</button>
+	<p><strong>Catatan:</strong> Untuk melihat hasilnya, klik salah satu tombol diatas.</p>
+	<p>
+		<input type="text">
+	</p>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Mengatur nilai dari semua input
+			$("button").click(function(){
+				var text = $(this).text();
+				$('input[type="text"]').val(text);
+			});
+		});
+	</script>
+</body>
+</html>

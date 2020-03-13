@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+</head>
+<body>
+	 <button type="button">Klik disini</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Mengatur konten HTML untuk elemen body
+			$("button").click(function(){
+				$("body").html("<p>Halo Semuanya</p>");
+			});
+		});
+	</script>
+</body>
+</html>

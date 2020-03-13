@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+</head>
+<body>
+	<p>Ini Paragraf 1. </p>
+	<p>Ini Paragraf 2. </p>
+	<p class="extra">Ini Paragraf Tambahan. </p>
+
+	<button type="button" class="tombol-satu">Dapatkan Semua Teks Paragraf</button>
+	<button type="button" class="tombol-dua">Dapatkan Teks Paragraf Pertama</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Mendapatkan kombinasi teks dari semua paragraf
+			$(".tombol-satu").click(function(){
+				var string = $("p").text();
+				alert(string);
+			});
+
+			// Mendapatkan teks dari paragraf pertama
+			$(".tombol-dua").click(function(){
+				var string = $("p:first").text();
+				alert(string);
+			});
+		});
+	</script>
+</body>
+</html>
