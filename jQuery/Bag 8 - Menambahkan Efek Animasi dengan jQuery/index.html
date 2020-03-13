@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">
+		img {
+			position: relative; /* Dibutuhkan untuk memindahkan elemen */
+		}
+	</style>
+</head>
+<body>
+	<p>
+		<img src="https://1.bp.blogspot.com/-Jukzvb0W6dY/XWoI2fMqLtI/AAAAAAAAGaQ/LN_mXP7FcfEE08GlTDML-58Cwvx-g0spQCLcBGAs/s1600/android-icon-96x96.png">
+	</p>
+
+	<button type="button">Jalankan Animasi</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("img").animate({
+					left: 300
+				});
+			});
+		});
+	</script>
+</body>
+</html>
