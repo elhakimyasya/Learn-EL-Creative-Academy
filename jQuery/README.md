@@ -11,7 +11,11 @@ Repository ini terdiri dari Source Code dan Konten untuk Seri Tutorial jQuery ya
 6. Fade
 7. Sliding
 8. Animation
-9. 
+9. stop()
+10. Chaining
+11. Callback
+12. Getter dan Setter
+13. Coming Soon...
 
 
 # Cara Menggunakan
