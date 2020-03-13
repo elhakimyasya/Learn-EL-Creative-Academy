@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p class="normal">Ini paragraf.</p>
+	<p class="cepat">Ini paragraf.</p>
+	<p class="sangat-cepat">Ini paragraf.</p>
+	<p class="lambat">Ini paragraf.</p>
+	<p class="sangat-lambat">Ini paragraf.</p>
+
+	<button type="button" class="tombol-hide">Sembunyikan Paragraf</button> 
+	<button type="button" class="tombol-show">Tampilkan Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Menyembunyikan paragraf dengan kecepatan yang berbeda
+			$(".tombol-hide").click(function(){
+				$("p.normal").hide();
+				$("p.cepat").hide("fast");
+				$("p.lambat").hide("slow");
+				$("p.sangat-cepat").hide(50);
+				$("p.sangat-lambat").hide(2000);
+			});
+
+			// Menampilkan paragraf dengan kecepatan yang berbeda
+			$(".tombol-show").click(function(){
+				$("p.normal").show();
+				$("p.cepat").show("fast");
+				$("p.lambat").show("slow");
+				$("p.sangat-cepat").show(50);
+				$("p.sangat-lambat").show(2000);
+			});
+		});
+	</script>
+</body>
+</html>

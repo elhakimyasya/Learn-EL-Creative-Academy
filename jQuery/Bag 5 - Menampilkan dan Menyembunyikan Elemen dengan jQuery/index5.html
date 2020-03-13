@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p>Ini paragraf.</p>
+	
+	<button type="button" class="tombol-toggle">Toggle Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Menampilkan pesan alert setelah toggle paragraf
+			$(".tombol-toggle").click(function(){
+				$("p").toggle(1000, function(){
+					// Kode akan dijalankan
+					alert("Efek Toggle sudah selesai.");
+				});
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p>Ini paragraf.</p>
+	<p>Ini paragraf.</p>
+
+	<button type="button" class="tombol-hide">Sembunyikan Paragraf</button> 
+	<button type="button" class="tombol-show">Tampilkan Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Menyembunyikan paragraf
+			$(".tombol-hide").click(function(){
+				$("p").hide();
+			});
+
+			// Menampilkan paragraf
+			$(".tombol-show").click(function(){
+				$("p").show();
+			});
+		});
+	</script>
+</body>
+</html>
