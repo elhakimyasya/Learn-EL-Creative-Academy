@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style>
+		.test {
+			padding: 15px;
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<h1>Ini Heading</h1>
+	<p>Ini Paragraf.</p>
+	<button type="button">Jalankan Chaining</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				// Kode ini akan bekerja
+				$("h1").html("Hello World!").addClass("test");
+
+				// Kode ini TIDAK akan bekerja
+				$("p").html().addClass("test");
+			});
+		});
+	</script>
+</body>
+</html>

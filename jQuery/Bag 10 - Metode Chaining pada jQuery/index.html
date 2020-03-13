@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">
+		p {
+			width: 200px;
+			padding: 40px 0;
+			font: bold 24px sans-serif;
+			text-align: center;
+			background: #aaccaa;
+			border: 1px solid #63a063;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<p>Halo Semuanya</p>
+	<button type="button" class="start">Jalankan</button>
+	<button type="button" class="reset">Reset</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".start").click(function(){
+				$("p").animate({width: "100%"}).animate({fontSize: "46px"}).animate({borderWidth: 30});
+			});
+			$(".reset").click(function(){
+				$("p").removeAttr("style");
+			});
+		});  
+	</script>
+</body>
+</html>
