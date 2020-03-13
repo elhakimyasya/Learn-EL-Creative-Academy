@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">p {display: none;}</style>
+</head>
+<body>
+	<p class="none">Ini paragraf.</p>
+	<p class="partial">Ini paragraf.</p>
+	<p class="complete">Ini paragraf.</p>
+
+	<button type="button" class="tombol-to">Fade Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Fade paragraf dengan opacity yang berbeda
+			$(".tombol-to").click(function(){
+				$("p.none").fadeTo("fast", 0);
+				$("p.partial").fadeTo("slow", 0.5);
+				$("p.complete").fadeTo(2000, 1);
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p>Ini paragraf.</p>
+
+	<button type="button" class="tombol-toggle">Toggle Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Toggle display paragraf dengan fading
+			$(".tombol-toggle").click(function(){
+				$("p").fadeToggle();
+			});
+		});
+	</script>
+</body>
+</html>

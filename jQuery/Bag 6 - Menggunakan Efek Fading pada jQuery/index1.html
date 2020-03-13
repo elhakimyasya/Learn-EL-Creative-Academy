@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p class="normal">Ini paragraf.</p>
+	<p class="cepat">Ini paragraf.</p>
+	<p class="sangat-cepat">Ini paragraf.</p>
+	<p class="lambat">Ini paragraf.</p>
+	<p class="sangat-lambat">Ini paragraf.</p>
+
+	<button type="button" class="tombol-out">Fade Out Paragraf</button>
+	<button type="button" class="tombol-in">Fade In Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Fade Out paragraf dengan kecepatan yang berbeda
+			$(".tombol-out").click(function(){
+				$("p.normal").fadeOut();
+				$("p.cepat").fadeOut("fast");
+				$("p.lambat").fadeOut("slow");
+				$("p.sangat-cepat").fadeOut(50);
+				$("p.sangat-lambat").fadeOut(2000);
+			});
+
+			// Fade In paragraf dengan kecepatan yang berbeda
+			$(".tombol-in").click(function(){
+				$("p.normal").fadeIn();
+				$("p.cepat").fadeIn("fast");
+				$("p.lambat").fadeIn("slow");
+				$("p.sangat-cepat").fadeIn(50);
+				$("p.sangat-lambat").fadeIn(2000);
+			});
+		});
+	</script>
+</body>
+</html>

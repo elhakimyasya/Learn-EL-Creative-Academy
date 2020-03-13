@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<p>Ini paragraf.</p>
+
+	<button type="button" class="tombol-out">Fade Out Paragraf</button>
+	<button type="button" class="tombol-in">Fade In Paragraf</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Menampilkan pesan alert setelah Fade Out paragraf
+			$(".tombol-out").click(function(){
+				$("p").fadeOut("slow", function(){
+					// Kode akan dijalankan
+					alert("Efek Fade Out selesai.");
+				});
+			});
+
+			// Menampilkan pesan alert setelah Fade In paragraf
+			$(".tombol-in").click(function(){
+				$("p").fadeIn("slow", function(){
+					// Kode akan dijalankan
+					alert("Efek Fade In selesai.");
+				});
+			});
+		});
+	</script>
+</body>
+</html>
