@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+</head>
+<body>
+
+	<div id="box">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum id metus ac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet sagittis. In tincidunt orci sit amet elementum vestibulum. Vivamus fermentum in arcu in aliquam. Quisque aliquam porta odio in fringilla non purus nisld Dapibus nec turpis vel, semper malesuada ant.
+	</div>
+	<p>
+		<button type="button">Lihat Lebar dan Tinggi</button>
+	</p>
+	<p id="hasil"></p>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				var lebarDiv = $("#box").innerWidth();
+				var tinggiDiv = $("#box").innerHeight();
+				$("#hasil").html("Inner Width: " + lebarDiv + " px, " + "Inner Height: " + tinggiDiv + " px");
+			});
+		});
+	</script>
+</body>
+</html>
