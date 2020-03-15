@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style>
+		p {
+			font-size: 18px;
+			font-family: Arial, sans-serif;
+		}     
+	</style>
+</head>
+<body>
+
+	<h1>Ini Heading</h1>
+	<p style="background-color:orange;">Ini Paragraf.</p>
+	<p style="background-color:#ee82ee;">Ini Paragraf.</p>
+	<p style="background-color:rgb(139,205,50);">Ini Paragraf.</p>
+	<p>Ini Paragraf.</p>
+	<button type="button">Tambah Style CSS</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("p").css({"background-color": "yellow", "padding": "20px"});
+			});    
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style>
+		.box {
+			width: 100px;
+			height: 100px;
+			display: inline-block;        
+			border: 1px solid #cdcdcd;
+			margin: 10px;
+		}      
+	</style>
+</head>
+<body>
+
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".box").click(function(){
+				$(this).css("background-color", "blue");
+			});    
+		});
+	</script>
+</body>
+</html>
