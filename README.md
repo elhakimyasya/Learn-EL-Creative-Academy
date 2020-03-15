@@ -9,8 +9,5 @@ Repository ini terdiri dari Source Code dan Konten untuk Seri Tutorial yang ada 
 4. Coming Soon...
 
 
-# Kontributor
-1. [Yasya El Hakim](https://github.com/elhakimyasya/)
-
 
 © Copyright 2019 - 2020 | [EL Creative Organization](https://www.elcreativeacademy.com/)
