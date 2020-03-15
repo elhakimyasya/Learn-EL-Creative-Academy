@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style>
+		.header-halaman {
+			color: red;
+			text-transform: uppercase;
+		}
+		.highlight {
+			background: yellow;
+		}        
+	</style>
+</head>
+<body>
+
+	<h1>Teks Demo</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+	<p class="hint"><strong>Tips:</strong> Lorem Ipsum is dummy text.</p>
+	<button type="button">Tambah Class</button>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("h1").addClass("header-halaman");
+				$("p.hint").addClass("highlight");
+			});
+		});
+	</script>
+</body>
+</html>
