@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style type="text/css">
+		.container {border: 3px solid red;}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1>Halo Semuanya</h1>
+		<p class="hint"><strong>Catatan:</strong> Jika kalian mengeklik tombol berikut, maka akan menghapus semua konten yang ada di dalam container termasuk tombol itu sendiri.</p>
+		<button type="button">Hapus Container</button>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Menghapus elemen parent dari paragraf
+			$("button").click(function(){
+				$("p").unwrap();
+			});
+		});
+	</script>
+</body>
+</html>
