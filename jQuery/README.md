@@ -19,7 +19,8 @@ Repository ini terdiri dari Source Code dan Konten untuk Seri Tutorial jQuery ya
 14. Cara Menghapus Konten
 15. Menambah, Menghapus, dan Memanipulasi Konten
 16. Mendapatkan dan Mengatur Properti CSS
-17. Coming Soon...
+17. Dimension
+18. Coming Soon...
 
 
 # Cara Menggunakan
