@@ -9,11 +9,12 @@ Repository ini terdiri dari Source Code dan Konten untuk Seri Tutorial Vue yang 
 4. Menggunakan Directive
 5. Membuat List Rendering dengan v-for
 6. Form Handling dengan v-model
-7. -
+7. - (Tidak ada contoh)
 8. Memahami Method dan Computed Property
 9. Memahami Property Watch (Watchers)
 10. Memahami Lifecycle Hook
 11. Memahami Komponen Global
+12. Coming Soon...
 
 
 # Cara Menggunakan
