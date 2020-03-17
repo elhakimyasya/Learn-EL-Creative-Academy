@@ -20,7 +20,11 @@ Repository ini terdiri dari Source Code dan Konten untuk Seri Tutorial jQuery ya
 15. Menambah, Menghapus, dan Memanipulasi Konten
 16. Mendapatkan dan Mengatur Properti CSS
 17. Dimension
-18. Coming Soon...
+18. Traversing
+19. Traversing Anchestor
+20. Traversing Descendant
+21. Traversing Sibling
+22. Coming Soon...
 
 
 # Cara Menggunakan
