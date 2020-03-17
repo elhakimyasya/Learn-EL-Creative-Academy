@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tutorial jQuery | EL Creative Academy</title>
+
+	<style>
+		*{
+			margin: 10px;
+		}
+		.frame{
+			border: 2px solid green;
+		}      
+	</style>
+</head>
+<body>
+	<div id="container">
+		<h1>Halo Semuanya</h1>
+		<p>Ini adalah contoh <em>Paragraf</em>.</p>
+
+		<ul>
+			<li>Item</li>
+			<li>Item</li>
+		</ul>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("li").parents().addClass("frame");
+		});
+	</script>
+</body>
+</html>
+
